@@ -22,21 +22,33 @@
           <a href = "4.html", target = "_self"> JavaScript </a>
         </li>
       </ol>
-      
       <div id = "article">
+        <input type="button" value="black" onclick="
+        if(document.querySelector('body').dataset.mode === 'switch_to_night'){
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          document.querySelector('body').dataset.mode = 'switch_to_day';
+          this.value = 'switch_to_day';
+        } else {
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          document.querySelector('body').dataset.mode = 'switch_to_night';
+          this.value = 'switch_to_night';
+        }
+        ">
+        <br />
         <h2>CSS</h2>
             <p>
               Cascading Style Sheets (CSS) is a style sheet language
               used for describing the presentation of a document written
               in a markup language.[1] Although most often used to set the
               visual style of web pages and user interfaces written in HTML
-              and XHTML, the language can be applied to any XML document, few
+              and XHTML, the language can be applied to any XML document,
               including plain XML, SVG and XUL, and is applicable to rendering
               in speech, or on other media. Along with HTML and JavaScript,
               CSS is a cornerstone technology used by most websites to create
               visually engaging webpages, user interfaces for web applications,
               and user interfaces for many mobile applications.
-              <a href = "http://youtu.be", target ="_blank"> search on youtube </a>
             </p>
       </div>
     </div>

@@ -23,16 +23,15 @@
         </li>
       </ol>
       <div id = "article">
-        <input type="button" value="black" onclick="
-        if(document.querySelector('body').dataset.mode === 'switch_to_night'){
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
-          document.querySelector('body').dataset.mode = 'switch_to_day';
+        <input type="button" value="switch_to_night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'switch_to_night'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
           this.value = 'switch_to_day';
         } else {
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
-          document.querySelector('body').dataset.mode = 'switch_to_night';
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
           this.value = 'switch_to_night';
         }
         ">
